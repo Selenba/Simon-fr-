@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simon.simon.Scores">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <children>
+        <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="211.0" text="Meilleurs scores : " VBox.vgrow="NEVER">
+                            <font>
+                                <Font name="Cambria Bold" size="25.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ListView fx:id="list" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </ListView>
+                        <Label fx:id="scoreMoyen" alignment="CENTER" prefHeight="19.0" prefWidth="253.0" text="Score moyen : ">
+                            <font>
+                                <Font name="Cambria Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="71.0" prefWidth="200.0" spacing="30.0" VBox.vgrow="NEVER">
+                            <children>
+                                <Button fx:id="play" mnemonicParsing="false" onAction="#play" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" text="JOUER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Consolas Bold" size="16.0" />
+                                    </font></Button>
+                        <Button fx:id="reset" mnemonicParsing="false" onAction="#reset" prefHeight="40.0" prefWidth="150.0" text="RESET SCORES" textFill="WHITE">
+                           <font>
+                              <Font name="Consolas Bold" size="16.0" />
+                           </font>
+                        </Button>
+                                <Button fx:id="menu" mnemonicParsing="false" onAction="#menu" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" text="MENU" textFill="WHITE">
+                                    <font>
+                                        <Font name="Consolas Bold" size="16.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

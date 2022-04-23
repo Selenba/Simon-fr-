@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simon.simon.Game">
+   <stylesheets>
+      <URL value="@Style.css" />
+   </stylesheets>
+   <children>
+      <VBox layoutY="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="420.0" prefWidth="1280.0" spacing="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="score" alignment="CENTER" prefHeight="17.0" prefWidth="307.0" text="Score : 0">
+                           <font>
+                              <Font name="Cambria" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="nextColor" layoutX="577.0" layoutY="163.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox layoutX="71.0" layoutY="284.0" prefHeight="500.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="red" mnemonicParsing="false" onAction="#clickedRed" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" />
+                        <Button fx:id="blue" mnemonicParsing="false" onAction="#clickedBlue" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="yellow" mnemonicParsing="false" onAction="#clickedYellow" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" />
+                        <Button fx:id="green" mnemonicParsing="false" onAction="#clickedGreen" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
