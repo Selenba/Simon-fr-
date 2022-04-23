@@ -1,2 +1,2 @@
-# Simon-fr-
-An afternoon project. It's a basic Simon.
+# Simon
+An afternoon project. It's a basic Simon (in french). <br>
