@@ -15,7 +15,7 @@ public class App extends Application {
     public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
         scene = new Scene(loadFXML("Menu"), 1280, 800);
         stage.setScene(scene);
-        stage.setTitle("Alice");
+        stage.setTitle("Simon");
         stage.setMinHeight(600);
         stage.setMinWidth(500);
         stage.show();
